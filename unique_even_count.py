@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+s=0
+for i in range(0,n):
+    for j in range(0,n):
+        if a[i]==a[j] and i!=j:
+            a[j]=0
+    if a[i]%2==0 and a[i]!=0:
+        s=s+1
+print(s)
+        
