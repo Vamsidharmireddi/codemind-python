@@ -17,4 +17,3 @@ if p==org:
     print('Automorphic Number')
 else:
     print('Not an Automorphic Number')
-    
