@@ -29,6 +29,3 @@ elif dif2>dif1:
     print(y)
 else:
     print(z)
-    
-    
-    
