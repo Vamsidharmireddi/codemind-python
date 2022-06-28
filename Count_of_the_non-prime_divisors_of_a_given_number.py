@@ -1,12 +1,16 @@
+def is_prime(n):
+    if n==0 or n==1:
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    else:
+        return 1
 n=int(input())
 c=0
 for i in range(1,n+1):
     if n%i==0:
-        if i==1:
-            c=1
-        else:
-            for j in range(2,i//2+1):
-                if i%j==0:
-                    c=c+1
-                    break
+        if is_prime(i)==0:
+            c=c+1
 print(c)
+
