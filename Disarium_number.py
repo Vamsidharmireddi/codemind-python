@@ -17,6 +17,3 @@ if s==temp:
     print('True')
 else:
     print('False')
-
-
-    
