@@ -1,13 +1,14 @@
 n=int(input())
 a=list(map(int,input().split()))
 c=0
-for i in range(0,n):
-    s=0
-    temp=a[i]
-    while a[i]>0:
-        d=a[i]%10
-        s=s*10+d
-        a[i]=a[i]//10
-    if s==temp:
+for i in a:
+    r=0
+    temp=i
+    while i>0:
+        d=i%10
+        r=r*10+d
+        i=i//10
+    if temp==r:
         c=c+1
 print(c)
+    
