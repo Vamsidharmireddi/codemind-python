@@ -1,13 +1,15 @@
+def is_prime(n):
+    if n==0 or n==1:
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    else:
+        return 1
 n=int(input())
 a=list(map(int,input().split()))
 c=0
-for i in range(0,len(a)):
-    if a[i]==1:
-        c=0
-    else:
-        for j in range(2,a[i]//2+1):
-            if(a[i]%j==0):
-                break
-        else:
-            c=c+1
+for i in a:
+    if is_prime(i):
+        c=c+1
 print(c)
