@@ -1,0 +1,18 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=0
+c=0
+for i in range(0,len(a)):
+    s=1
+    for j in range(0,len(a)):
+        if i!=j:
+            if a[i]==a[j]:
+                a[j]=0
+                s=s+1
+    if s==a[i] and a[i]!=0:
+        k=k+a[i]
+        c=c+1
+if c==0:
+    print('-1')
+else:
+    print('{:.2f}'.format(k/c))
