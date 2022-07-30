@@ -1,9 +1,10 @@
-n=input()
-d=[]
-for i in n:
-    if i.islower():
-        if n.count(i)==1:
-            d.append(i)
-k=sorted(d)
+s=input()
+s=s.lower()
+k=set(s)
+g=[]
 for i in k:
+    if i!=" ":
+        g.append(i)
+b=sorted(g)
+for i in b:
     print(i,end='')
