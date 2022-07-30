@@ -1,3 +1,3 @@
 n=input()
-k=str(n)[::-1]
-print(k)
+l=n.split()
+print(*l[::-1])
