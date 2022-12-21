@@ -1,8 +1,8 @@
 a=input()
 b=a.lower()
-x=b.split()
+k=b.split()
 c=0
-for i in x:
+for i in k:
     if i==i[::-1]:
         c=c+1
 print(c)
