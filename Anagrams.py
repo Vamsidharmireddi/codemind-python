@@ -1,10 +1,10 @@
-a=input()
-b=input()
-x=a.lower()
-y=b.lower()
-p=set(x)
-q=set(y)
-if p==q:
-    print('True')
+s1=input()
+s2=input()
+a=set(s1.lower())
+b=set(s2.lower())
+for i in a:
+    if i not in b:
+        print(False)
+        break
 else:
-    print('False')
+    print(True)
